@@ -24,7 +24,8 @@ module.exports = () => {
       path: path.resolve(__dirname, "dist"),
     },
     plugins: [
-      new WorkboxPlugin({
+      // wondering if this is the right plug or not?
+      new  HtmlWebpackPlugin({
         template: "./index.html",
         title: "Webpack Plugin",
       }),
